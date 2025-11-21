@@ -1,0 +1,16 @@
+public Boolean isBirthday(Contact c) {
+    Integer day = c.Birthdate.day();
+    Integer month = c.Birthdate.month();
+
+    Date dia = System.today();
+    Integer day2 = dia.day();
+    Integer month2 = dia.month();
+
+
+    if(day == day2 && month == month2){
+        return true;
+    } else{
+        return false;
+    }
+
+}
