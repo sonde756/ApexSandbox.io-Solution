@@ -2,7 +2,8 @@ public void linkParent(Case c1, Case c2) {
 
     DateTime d1 = c1.CreatedDate;
     DateTime d2 = c2.CreatedDate;
-    if(d1.CreatedDate < d2.CreatedDate){
+
+    if(d1 < d2){
         c1.ParentId  = c2.id;
     } eslse{
         c2.ParentId  = c1.id;
