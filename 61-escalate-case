@@ -1,9 +1,12 @@
 public void escalateIfMeetsCriteria(Case c) {
-    if(
-        (c.Type == 'Mechanical' || c.Type == 'Electrical')
-        &&
-        c.Reason == 'Breakdown' && c.Status == 'In Progress'
-    ){
-        c.IsEscalated  = true;
+
+    if (c == null) return;
+
+    Boolean typeOk = c.Type == 'Mechanical' || c.Type == 'Electrical';
+    Boolean reasonOk = c.Reason == 'Breakdown';
+    Boolean statusOk = c.Status == 'In Progress';
+
+    if (typeOk && reasonOk && statusOk) {
+        c.IsEscalated = true;
     }
 }
