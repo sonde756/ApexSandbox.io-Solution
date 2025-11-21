@@ -2,6 +2,8 @@ public Boolean duplicateContacts(Contact c1, Contact c2) {
     
  
     if(c1.email == c2.email) return true;
+    if(c1.phone == c2.phone) return true;
+
 
     return false;
 }
