@@ -10,5 +10,4 @@ public void setAccountRating(Account a) {
         a.Rating  = 'Warm'; 
     }
 
-    update a;
 }
