@@ -1,0 +1,27 @@
+public List<Account> getAccounts(List<Account> accounts) {
+    
+    List<Account> resul = accounts;
+    resul.sort();
+
+    return resul;
+}
+
+public class AccountWrapper implements Comparable {
+    public Account acc;
+
+    public Account(Long i, String n, String p) {
+        id = i;
+        name = n;
+        phone = p;
+    }
+    
+    public Integer compareTo(Object compareTo) {
+        Account compareToEmp = (Account)compareTo;
+
+        if (acc.AnnualRevenue == compareToEmp.AnnualRevenue) return 0;
+        if (AnnualRevenue > compareToEmp.AnnualRevenue) return 1;
+        return -1;        
+    }
+
+}
+    
