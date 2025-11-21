@@ -4,7 +4,7 @@ public void setAccountRating(Account a) {
 
     if(valor <= 100000){
         a.Rating  = 'Cold';
-    } else if(valor >= 500000){
+    } else if(valor <= 500000){
         a.Rating  = 'Warm';
     } else{
         a.Rating  = 'Hot'; 
