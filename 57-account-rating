@@ -1,6 +1,6 @@
 public void setAccountRating(Account a) {
 
-    Decimal valor = a.AnnualRevenue;
+    Integer valor = a.AnnualRevenue;
 
     if(valor <= 100000){
         a.Rating  = 'Cold';
