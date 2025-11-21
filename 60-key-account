@@ -1,0 +1,12 @@
+public Boolean isKeyAccount(Account a) {
+
+    Decimal value = a.AnnualRevenue;
+    String ind = a.Industry;
+
+    switch on ind {
+        when 'Banking' {return value >= 600000;}
+        when 'Technology' { return value >= 800000;}
+        when 'Retail'{return value >= 2000000;}
+        when else {return value >= 500000;}   
+    }
+}
