@@ -1,16 +1,7 @@
 public Boolean isBirthday(Contact c) {
-    Integer dayBirthdate  = c.Birthdate.day();
-    Integer monthBirthdate  = c.Birthdate.month();
-
     Date currentDate = System.today();
-    Integer currentyDay = currentDate.day();
-    Integer currentMonth = currentDate.month();
 
-
-    if(dayBirthdate == currentyDay && monthBirthdate == currentMonth){
-        return true;
-    } else{
-        return false;
-    }
+    return c.Birthdate.day() == currentDate.day() 
+            && c.Birthdate.month() == currentDate.month();
 
 }
