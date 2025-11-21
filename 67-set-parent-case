@@ -3,6 +3,10 @@ public void linkParent(Case c1, Case c2) {
     DateTime d1 = c1.CreatedDate;
     DateTime d2 = c2.CreatedDate;
 
+    if (d1 == d2) return;
+    if (c1.ContactId == null || c2.ContactId == null) return;
+
+
     if(c1.ContactId == c2.ContactId){
         if(d1 > d2){
             c1.ParentId = c2.id;
