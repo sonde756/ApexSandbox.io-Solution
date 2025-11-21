@@ -1,13 +1,13 @@
 public Boolean isBirthday(Contact c) {
-    Integer day = c.Birthdate.day();
-    Integer month = c.Birthdate.month();
+    Integer dayBirthdate  = c.Birthdate.day();
+    Integer monthBirthdate  = c.Birthdate.month();
 
-    Date dia = System.today();
-    Integer day2 = dia.day();
-    Integer month2 = dia.month();
+    Date currentDate = System.today();
+    Integer currentyDay = currentDate.day();
+    Integer currentMonth = currentDate.month();
 
 
-    if(day == day2 && month == month2){
+    if(dayBirthdate == currentyDay && monthBirthdate == currentMonth){
         return true;
     } else{
         return false;
