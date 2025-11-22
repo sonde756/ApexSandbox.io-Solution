@@ -3,15 +3,8 @@ public List<Integer> evenNumbers(Integer n) {
 
     List<Integer> numbers = new List<Integer>();
 
-    Integer total = 1;
-    While(true){
-        
-        if(Math.mod(total, 2) == 0){
-            numbers.add(total);
-        }
-
-        if(numbers.size() == n) break;
-        total++;
+    for (Integer i = 1; i <= n; i++) {
+        numbers.add(i * 2);
     }
 
     return numbers;
