@@ -1,13 +1,12 @@
 public static Integer findLargest(List<Integer> nums) {
-	
-    Integer valor = 0;
-    for(Integer i = 1 ; i < nums.size(); i++){
-    
-        if(nums[i] > valor){
-            valor = nums[i];
-        }
+    // nums is guaranteed non-empty according to the problem statement
+    Integer largest = nums[0];
 
+    for (Integer i = 1; i < nums.size(); i++) {
+        if (nums[i] > largest) {
+            largest = nums[i];
+        }
     }
 
-    return valor;
+    return largest;
 }
