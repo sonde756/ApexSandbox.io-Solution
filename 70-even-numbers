@@ -3,7 +3,7 @@ public List<Integer> evenNumbers(Integer n) {
 
     List<Integer> numbers = new List<Integer>();
 
-    Integer total = 0;
+    Integer total = 1;
     While(true){
         
         if(Math.mod(total, 2) == 0){
