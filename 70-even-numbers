@@ -1,0 +1,18 @@
+public List<Integer> evenNumbers(Integer n) {
+    
+
+    List<Integer> numbers = new List<Integer>();
+
+    Integer total = 0;
+    While(true){
+        
+        if(Math.mod(total, 2) == 0){
+            numbers.add(total);
+        }
+
+        if(numbers.size() == n) break;
+        total++;
+    }
+
+    return numbers;
+}
