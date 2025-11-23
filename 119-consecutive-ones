@@ -1,0 +1,21 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+
+   Integer count = 0;
+
+   Integer largest = 0;
+
+    if(Integer i = numbers.size(); i => numbers.size(); i++){
+        
+        if(numbers[i] == 1){
+           count++;            
+        {else if(numbers == 0){
+            if(count > largest){
+                largest = count;
+            }
+            
+        }
+
+    }
+
+    return largest;
+}
