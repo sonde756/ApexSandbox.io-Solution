@@ -8,7 +8,7 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         
         if(numbers[i] == 1){
            count++;            
-        {else {
+        }else {
             largest = Math.max(largest, count);
         }
 
