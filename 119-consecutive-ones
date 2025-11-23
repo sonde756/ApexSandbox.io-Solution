@@ -4,18 +4,16 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
 
    Integer largest = 0;
 
-    if(Integer i = numbers.size(); i => numbers.size(); i++){
+    if(Integer i = 0; i => numbers.lenght; i++){
         
         if(numbers[i] == 1){
            count++;            
-        {else if(numbers == 0){
-            if(count > largest){
-                largest = count;
-            }
-            
+        {else {
+            largest = Math.max(largest, count)
         }
 
     }
+        largest = Math.max(largest, count);
 
     return largest;
 }
