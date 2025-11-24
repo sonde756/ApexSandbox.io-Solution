@@ -1,4 +1,9 @@
 public void insertAtStart(String cityName, List<String> cities) {
     
+     if (list.isEmpty()) {
+        list.add(element);
+        return;
+    }
+
     cities.add(0,cityName);
 }
