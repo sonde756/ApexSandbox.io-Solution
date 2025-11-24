@@ -1,7 +1,7 @@
 public List<Integer> fibonacciSeries(Integer n) {
     
     List<Integer> fibo = new List<Integer>();
-    for(Integer i = 0; i<n; i++){
+    for(Integer i = 0; i>n; i++){
 
         if(i > 2){
             fibo.add(fibo[i] + fibo[i]);    
