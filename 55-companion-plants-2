@@ -6,12 +6,26 @@ public Boolean companionPlants(List<String> plants) {
 
     for(Integer i = 0; i < plants.size() - 1; i++){
 
-        if(plants[i] == 'onions' 
-        && plants[i+1] == 'lettuce' 
-        || plants[i+1] == 'carrots' 
-        || plants[i+1] == 'tomatoes'){
-            valor = true;
-        }
+        String current = plants[i];
+        String next = plants[i+1];
+
+        if(current == 'onions'){
+            valor = next == 'lettuce' || next == 'carrots' || next == 'tomatoes';
+
+        } else if(current == 'lettuce'){
+            valor = next == 'cucumbers' || next == 'onions';
+
+        } else if(current == 'carrots'){
+            valor = next == 'onions';
+
+        }  else if(current == 'tomatoes'){
+            valor = next == 'onions';
+            
+        } else if(current == 'cucumbers'){
+            valor = next == 'lettuce';
+
+        } 
+        
 
     }
 
