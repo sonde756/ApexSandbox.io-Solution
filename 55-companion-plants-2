@@ -3,13 +3,13 @@ public Boolean companionPlants(List<String> plants) {
     if(plants.isEmpty()) return true;
 
     Boolean valor = false;
-    
-    for(Integer i = 0; i > plants.size(); i++){
+
+    for(Integer i = 0; i < plants.size() - 1; i++){
 
         if(plants[i] == 'onions' 
         && plants[i+1] == 'lettuce' 
         || plants[i+1] == 'carrots' 
-        || plants[i+1] == 'tomatoes' ){
+        || plants[i+1] == 'tomatoes'){
             valor = true;
         }
 
