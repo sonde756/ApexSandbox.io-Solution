@@ -4,7 +4,7 @@ public List<Integer> fibonacciSeries(Integer n) {
     for(Integer i = 0; i<n; i++){
 
         if(n > 2){
-            fibo.add(fibo[i-1] + fibo[i]);    
+            fibo.add(fibo[i] + fibo[i]);    
         }
     
     }
