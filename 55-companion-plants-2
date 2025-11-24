@@ -23,10 +23,8 @@ public Boolean companionPlants(List<String> plants) {
             
         } else if(current == 'cucumbers'){
             valor = next == 'lettuce';
-
         } 
         
-
     }
 
     return valor;
