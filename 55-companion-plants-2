@@ -10,19 +10,19 @@ public Boolean companionPlants(List<String> plants) {
         String next = plants[i+1];
 
         if(current == 'onions'){
-            valor = next == 'lettuce' || next == 'carrots' || next == 'tomatoes';
+            valor = (next == 'lettuce' || next == 'carrots' || next == 'tomatoes');
 
         } else if(current == 'lettuce'){
-            valor = next == 'cucumbers' || next == 'onions';
+            valor = (next == 'cucumbers' || next == 'onions');
 
         } else if(current == 'carrots'){
-            valor = next == 'onions';
+            valor = (next == 'onions');
 
         }  else if(current == 'tomatoes'){
-            valor = next == 'onions';
+            valor = (next == 'onions');
             
         } else if(current == 'cucumbers'){
-            valor = next == 'lettuce';
+            valor = (next == 'lettuce');
         } 
         
     }
