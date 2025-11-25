@@ -2,12 +2,11 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     
     List<String> ls = new List<String>();
 
-    Integer n = Math.min(adjectives.size(), animals.size());
-
-    for(Integer i = 0; i < n; i++){
-        String adj = adjectives.get(i).trim();
-        String ani = animals.get(i).trim();
-        ls.add(adj+'-'+ani);
+    
+    for(String ad : adjectives){
+        for(String an : animals){
+            ls.add(ad+'-'+an);
+        }
     }
 
     return ls;
